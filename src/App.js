@@ -9,7 +9,7 @@ import MenuPage from "./pages/MenuPage";
 import MenuTempuraSushiPage from "./pages/MenuTempuraSushiPage";
 import MenuPokeBowlPage from "./pages/MenuPokeBowlPage";
 import MenuEggRollsPage from "./pages/MenuEggRollsPage";
-import MenuDynamic from "./pages/MenuDynamic";
+import MenuDishPage from "./pages/MenuDishPage";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         <Route 
           path="/menu" element={<MenuPage />} 
         />
-        <Route path="/menu/:id" element={<MenuDynamic />} />
-        <Route 
+        <Route path="/menu/:dish" element={<MenuDishPage/>} />
+        {/* <Route 
           path="/menu/tempura-sushi" element={<MenuTempuraSushiPage />} 
         />
         <Route 
@@ -36,7 +36,7 @@ function App() {
         />
         <Route 
           path="/menu/egg-rolls" element={<MenuEggRollsPage />} 
-        />
+        /> */}
       </Routes>
     </div>
   );
